@@ -1,0 +1,31 @@
+
+
+nav{
+  display: flex; justify-content: space-between; 
+}
+nav .mini{
+  width: 1100px; margin: auto; display: flex;
+}
+nav .mini ul{
+  list-style-type: none; display: flex; justify-content: space-between;
+}
+nav .mini ul li a{
+  color: #000; font-size: 16px; padding: 15px 20px; background-color: #2ab80a;
+  text-decoration: none; display: inline-block;
+}
+nav .mini ul li a:hover{
+  background: black; color: orange;
+}
+nav .mini ul li ul{
+  position: absolute; display: initial; background: #dddddd; border: 1px solid darkorange;
+top:200% ; right: 0%; opacity: 0; visibility: hidden; transition: 1s;
+
+}
+
+nav .mini ul li{
+  position: relative;
+}
+
+nav .mini ul li:hover ul{
+  opacity: 1; visibility: visible; top: 100%;
+}
